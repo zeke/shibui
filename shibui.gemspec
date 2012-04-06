@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
 
-  s.version = "0.0.1"
+  s.version = "0.0.1.alpha"
   s.date    = "2012-03-08"
 
   s.name = "shibui"
@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.summary = %q{The Heroku styleguide harnessing the power of Compass.}
   s.description = %q{The Heroku styleguide harnessing the power of Compass.}
   s.email = "max@heroku.com"
-  s.homepage = "http://heroku.github.com/shibui"
+  s.homepage = "https://github.com/heroku/shibui"
 
   s.files = %w(Readme.md)
   s.files += Dir.glob("lib/**/*.*")
