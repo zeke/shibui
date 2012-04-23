@@ -1,22 +1,17 @@
-Gem::Specification.new do |s|
+# -*- encoding: utf-8 -*-
+require File.expand_path('../lib/shibui/version', __FILE__)
 
-  s.version = "0.0.1.alpha"
-  s.date    = "2012-03-08"
+Gem::Specification.new do |gem|
+  gem.authors       = ["Maximilian Schoening"]
+  gem.email         = ["max@heroku.com"]
+  gem.description   = %q{The Heroku CSS styleguide.}
+  gem.summary       = %q{The Heroku CSS styleguide as a Compass extension.}
+  gem.homepage      = "https://github.com/heroku/shibui"
 
-  s.name = "shibui"
-  s.authors = ["Maximilian Schoening"]
-  s.summary = %q{The Heroku styleguide harnessing the power of Compass.}
-  s.description = %q{The Heroku styleguide harnessing the power of Compass.}
-  s.email = "max@heroku.com"
-  s.homepage = "https://github.com/heroku/shibui"
+  gem.files         = `git ls-files`.split("\n")
+  gem.name          = "shibui"
+  gem.require_paths = ["lib"]
+  gem.version       = Shibui::VERSION
 
-  s.files = %w(Readme.md)
-  s.files += Dir.glob("lib/**/*.*")
-  s.files += Dir.glob("stylesheets/**/*.*")
-  s.files += Dir.glob("templates/**/*.*")
-
-  s.has_rdoc = false
-  s.rubygems_version = %q{1.3.6}
-  s.add_dependency("compass", [">= 0.11.5"])
-
+  gem.add_dependency "compass", ">= 0.11.5"
 end
