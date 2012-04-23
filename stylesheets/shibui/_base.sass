@@ -19,8 +19,8 @@ body
 p
   @include trailer
 
-  &:first-child
-    @include leader
+  &:last-child
+    margin-bottom: 0
 
 #{headings(all)}
   color: #fff
@@ -46,8 +46,8 @@ h5
 ul, ol
   @include trailer
 
-  &:first-child
-    @include leader
+  &:last-child
+    margin-bottom: 0
 
 ul
   list-style: disc
@@ -65,8 +65,8 @@ pre
   padding: $base-line-height
   @include trailer
 
-  &:first-child
-    @include leader
+  &:last-child
+    margin-bottom: 0
 
 hr
   background: #17171e
@@ -75,8 +75,8 @@ hr
   height: 3px
   @include trailer
 
-  &:first-child
-    @include leader
+  &:last-child
+    margin-bottom: 0
 
 a
   &:link,
