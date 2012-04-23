@@ -15,5 +15,5 @@ In Terminal:
 Create a Shibui-based Compass Project
 -------------------------------------
 
-* .scss syntax: `compass create <project-name> -r shibui -using shibui`
-* .sass syntax: `compass create <project-name> -r shibui -using shibui --syntax sass`
+* .scss syntax: `compass create <project-name> -r shibui -u shibui`
+* .sass syntax: `compass create <project-name> -r shibui -u shibui --syntax sass`
