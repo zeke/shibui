@@ -1,0 +1,10 @@
+.hero {
+  text-align: center;
+  @include leader($lines: 2, $property: margin);
+  text-transform: lowercase;
+  @include trailer($lines: 2, $property: margin);
+
+  h2 {
+    color: #a292ff;
+  }
+}
