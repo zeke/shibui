@@ -1,4 +1,4 @@
-%shibui-recessed-background {
+%shibui-code-background {
   @include border-radius($default-border-radius);
   @include box-shadow(0 1px 0 rgba(255, 255, 255, 0.02));
   background: darken($shibui-content-background-color, 6%);
@@ -42,7 +42,7 @@
   code {
     @include adjust-font-size-to($base-font-size * 0.9);
     @extend %meslo-font-stack;
-    @extend %shibui-recessed-background;
+    @extend %shibui-code-background;
     color: lighten($shibui-base-text-color, 10%);
     padding: 0 0.2em;
     white-space: nowrap;
@@ -98,7 +98,7 @@
   }
 
   pre {
-    @extend %shibui-recessed-background;
+    @extend %shibui-code-background;
     overflow: auto;
     padding: $base-line-height * 0.5;
 
