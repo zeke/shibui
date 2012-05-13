@@ -61,11 +61,11 @@ $heroku-font-host: "https://statics.herokuapp.com";
 }
 
 %corbel-font-stack {
-  font-family: "corbel", "helvetica neue", helvetica, arial, geneva, sans-serif;
+  font-family: corbel, "helvetica neue", helvetica, arial, geneva, sans-serif;
 }
 
 %meslo-font-stack {
-  font-family: "meslo", monaco, monospace;
+  font-family: meslo, monaco, monospace;
 }
 
 @mixin shibui-font-size($size) {
