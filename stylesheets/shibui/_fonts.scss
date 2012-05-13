@@ -1,11 +1,11 @@
-@mixin helvetica-fontstack {
+%helvetica-font-stack {
   font-family: "helvetica neue", helvetica, arial, geneva, sans-serif;
 }
 
-@mixin corbel-fontstack {
+%corbel-font-stack {
   font-family: "CorbelRegular", "helvetica neue", helvetica, arial, geneva, sans-serif;
 }
 
-@mixin meslo-fontstack {
+%meslo-font-stack {
   font-family: "MesloRegular", monaco, monospace;
 }

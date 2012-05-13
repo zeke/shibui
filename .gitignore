@@ -4,14 +4,15 @@
 .config
 .sass-cache
 .yardoc
-Gemfile.lock
-InstalledFiles
 _yardoc
 coverage
 doc/
+Gemfile.lock
+InstalledFiles
 lib/bundler/man
 pkg
 rdoc
+shibui-deprecated
 spec/reports
 test/tmp
 test/version_tmp

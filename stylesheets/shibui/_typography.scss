@@ -1,0 +1,106 @@
+@import "compass/css3";
+@import "compass/typography/vertical_rhythm";
+
+@import "fonts";
+
+%shibui-base-typography {
+  @extend %helvetica-font-stack;
+  color: $shibui-base-text-color;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+
+  #{headings(all)} {
+    @extend %corbel-font-stack;
+    color: $shibui-heading-text-color;
+  }
+
+  a {
+    &:link,
+    &:visited {
+      color: $shibui-link-text-color;
+      text-decoration: none;
+    }
+
+    &:hover,
+    &:active {
+      text-decoration: underline;
+    }
+  }
+
+  em, i {
+    font-style: italic;
+  }
+
+  strong, b {
+    font-weight: bold;
+  }
+
+  code {
+    @include adjust-font-size-to($base-font-size * 0.9);
+    @extend %meslo-font-stack;
+  }
+}
+
+%shibui-reading-typography {
+  h1 {
+    @include adjust-font-size-to($base-font-size * 2.8, $lines: 3);
+  }
+
+  h2 {
+    @include adjust-font-size-to($base-font-size * 2, $lines: 2);
+  }
+
+  h3 {
+    @include adjust-font-size-to($base-font-size * 1.5, $lines: 2);
+  }
+
+  h4 {
+    @include adjust-font-size-to($base-font-size * 1.3, $lines: 2);
+  }
+
+  p, ul, ol, pre, hr {
+    @include trailer;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  ul {
+    list-style: disc;
+    padding-left: 16px;
+  }
+
+  ol {
+    list-style: decimal;
+    padding-left: 19px;
+  }
+
+  pre {
+    @include border-radius(3px);
+    @include box-shadow(0 1px 0 rgba(255, 255, 255, 0.02), 0 1px 1px rgba(0, 0, 0, 0.25) inset);
+    background: #111116;
+    overflow: auto;
+    padding: $base-line-height;
+  }
+
+  hr {
+    @include box-shadow(0 0 0 1px rgba(255, 255, 255, 0.02), 0 0 0 1px #101015 inset);
+    background: #17171e;
+    border: 0;
+    height: 3px;
+  }
+}
+
+@mixin shibui-typography($nested: false) {
+  @if $nested {
+    @extend %shibui-base-typography;
+    @extend %shibui-reading-typography;
+  }
+  @else {
+    body {
+      @extend %shibui-base-typography;
+      @extend %shibui-reading-typography;
+    }
+  }
+}

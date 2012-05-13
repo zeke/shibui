@@ -1,14 +1,14 @@
-@import url("https://statics.heroku.com/fonts/fonts.css");
+// This Compass module applies a global reset to your stylesheets by simply
+// importing it. See: http://compass-style.org/reference/compass/reset/
+//
+// Note: This module will place styles into your stylesheet by importing it.
+@import "compass/reset"; // recommended
 
-$base-font-size:       13px  !default;
-$base-line-height:     18px  !default;
-$relative-font-sizing: false !default;
+@import "shibui/config"; // required
+@import "shibui/fonts";
+@import "shibui/typography";
 
-@import "compass";
-@import "compass/reset";
-
-@import "shibui/shared";
-@import "shibui/base";
-@import "shibui/buttons";
-@import "shibui/forms";
-@import "shibui/components";
+// To initialize sensible Shibui default mixins:
+// @import "shibui/init";
+//
+// Note: Make this call immediately after importing the Shibui framework.
