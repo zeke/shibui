@@ -1,13 +1,71 @@
+$heroku-font-host: "https://statics.herokuapp.com";
+
+@mixin font-face-src($filename, $svg-key) {
+  src: url("#{$heroku-font-host}/fonts/#{$filename}.eot?") format("eot"),
+       url("#{$heroku-font-host}/fonts/#{$filename}.woff") format("woff"),
+       url("#{$heroku-font-host}/fonts/#{$filename}.ttf") format("truetype"),
+       url("#{$heroku-font-host}/fonts/#{$filename}.svg##{$svg-key}") format("svg");
+}
+
+@font-face {
+  font-family: "corbel";
+  font-weight: 400;
+  font-style: normal;
+  @include font-face-src(corbel-webfont, webfontO0rfJpd7);
+}
+
+@font-face {
+  font-family: "corbel";
+  font-weight: 700;
+  font-style: normal;
+  @include font-face-src(corbelbold-webfont, webfontlZZPxZYu);
+}
+
+@font-face {
+  font-family: "hybrea";
+  font-weight: 300;
+  font-style: normal;
+  @include font-face-src(hybrealight-webfont, webfontHioEustJ);
+}
+
+@font-face {
+  font-family: "hybrea";
+  font-weight: 400;
+  font-style: normal;
+  @include font-face-src(hybrea-webfont, webfonto3DdN6lX);
+}
+
+@font-face {
+  font-family: "meslo";
+  font-weight: 400;
+  font-style: normal;
+  @include font-face-src(meslolgs-dz-regular-webfont, MesloLGSDZRegular);
+}
+
+@font-face {
+  font-family: "meslo";
+  font-weight: 400;
+  font-style: italic;
+  @include font-face-src(meslolgs-dz-italic-webfont, MesloLGSDZItalic);
+}
+
+@font-face {
+  font-family: "meslo";
+  font-weight: 700;
+  font-style: normal;
+  @include font-face-src(meslolgs-dz-bold-webfont, MesloLGSDZBold);
+}
+
 %helvetica-font-stack {
   font-family: "helvetica neue", helvetica, arial, geneva, sans-serif;
 }
 
 %corbel-font-stack {
-  font-family: "CorbelRegular", "helvetica neue", helvetica, arial, geneva, sans-serif;
+  font-family: "corbel", "helvetica neue", helvetica, arial, geneva, sans-serif;
 }
 
 %meslo-font-stack {
-  font-family: "MesloRegular", monaco, monospace;
+  font-family: "meslo", monaco, monospace;
 }
 
 @mixin shibui-font-size($size) {
