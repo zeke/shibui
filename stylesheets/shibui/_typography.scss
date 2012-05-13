@@ -45,6 +45,7 @@
     @extend %shibui-code-background;
     color: lighten($shibui-base-text-color, 10%);
     padding: 0 0.2em;
+    white-space: nowrap;
   }
 
   abbr[title] {
@@ -107,6 +108,7 @@
       background: transparent;
       border: none;
       padding: 0;
+      white-space: normal;
     }
   }
 
