@@ -56,19 +56,19 @@
 
 %shibui-reading-typography {
   h1 {
-    @include adjust-font-size-to($base-font-size * 2.8, $lines: 3);
+    @extend %shibui-xxxl-font-size;
   }
 
   h2 {
-    @include adjust-font-size-to($base-font-size * 2, $lines: 2);
+    @extend %shibui-xxl-font-size;
   }
 
   h3 {
-    @include adjust-font-size-to($base-font-size * 1.5, $lines: 2);
+    @extend %shibui-xl-font-size;
   }
 
   h4 {
-    @include adjust-font-size-to($base-font-size * 1.3, $lines: 2);
+    @extend %shibui-l-font-size;
   }
 
   p, ul, ol, dl, pre, hr {
