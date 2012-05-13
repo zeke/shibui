@@ -10,18 +10,17 @@
   font-family: "MesloRegular", monaco, monospace;
 }
 
-%shibui-l-font-size {
-  @include adjust-font-size-to($base-font-size * 1.3, $lines: 2);
-}
-
-%shibui-xl-font-size {
-  @include adjust-font-size-to($base-font-size * 1.5, $lines: 2);
-}
-
-%shibui-xxl-font-size {
-  @include adjust-font-size-to($base-font-size * 2, $lines: 2);
-}
-
-%shibui-xxxl-font-size {
-  @include adjust-font-size-to($base-font-size * 2.8, $lines: 3);
+@mixin shibui-font-size($size) {
+  @if $size == large {
+    @include adjust-font-size-to($base-font-size * 1.3, $lines: 2);
+  }
+  @else if $size == xl {
+    @include adjust-font-size-to($base-font-size * 1.5, $lines: 2);
+  }
+  @else if $size ==  xxl {
+    @include adjust-font-size-to($base-font-size * 2, $lines: 2);
+  }
+  @else if $size ==  xxxl {
+    @include adjust-font-size-to($base-font-size * 2.8, $lines: 3);
+  }
 }

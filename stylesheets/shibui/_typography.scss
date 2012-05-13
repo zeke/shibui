@@ -56,19 +56,19 @@
 
 %shibui-reading-typography {
   h1 {
-    @extend %shibui-xxxl-font-size;
+    @include shibui-font-size(xxxl);
   }
 
   h2 {
-    @extend %shibui-xxl-font-size;
+    @include shibui-font-size(xxl);
   }
 
   h3 {
-    @extend %shibui-xl-font-size;
+    @include shibui-font-size(xl);
   }
 
   h4 {
-    @extend %shibui-l-font-size;
+    @include shibui-font-size(l);
   }
 
   p, ul, ol, dl, pre, hr {
