@@ -1,8 +1,12 @@
-%shibui-code-background {
-  @include border-radius($default-border-radius);
+%shibui-recessed-background {
   @include box-shadow(0 1px 0 rgba(255, 255, 255, 0.02));
   background: darken($shibui-content-background-color, 6%);
   border: 1px solid darken($shibui-content-background-color, 8%);
+}
+
+%shibui-code-background {
+  @include border-radius($default-border-radius);
+  @extend %shibui-recessed-background;
 }
 
 %shibui-base-typography {
@@ -113,10 +117,8 @@
   }
 
   hr {
-    @include box-shadow(0 0 0 1px rgba(255, 255, 255, 0.02), 0 0 0 1px #101015 inset);
-    background: #17171e;
-    border: 0;
-    height: 3px;
+    @extend %shibui-recessed-background;
+    height: 1px;
   }
 }
 
