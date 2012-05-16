@@ -69,7 +69,7 @@ $heroku-font-host: "https://statics.herokuapp.com";
 }
 
 @mixin shibui-font-size($size) {
-  @if $size == large {
+  @if $size == l {
     @include adjust-font-size-to($base-font-size * 1.3, $lines: 2);
   }
   @else if $size == xl {
