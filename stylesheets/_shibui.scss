@@ -1,11 +1,7 @@
-@import "compass";
+@import "shibui/config"; // required
 
-// This Compass module applies a global reset to your stylesheets by simply
-// importing it. See: http://compass-style.org/reference/compass/reset/
-//
-// Note: This module will place styles into your stylesheet by importing it.
+@import "compass";
 @import "compass/reset"; // recommended
 
-@import "shibui/config"; // required
 @import "shibui/fonts";
 @import "shibui/typography";
