@@ -35,7 +35,7 @@ Working on Shibui can be a little painful. Using the gem and Bundler will make y
 
 1. `git clone git@heroku.com:heroku/shibui.git`
 2. `ln -s ~/path/to/shibui/stylesheets ~/path/to/your/app/app/assets/stylesheets/shibui-dev`
-3. `echo "shibui" > ~/path/to/your/app/.gitignore`
+3. `echo "shibui-dev" > ~/path/to/your/app/.gitignore`
 
 Now you can include the Shibui development stylesheets in your application and can easily toggle between the local development version and the gem:
 
