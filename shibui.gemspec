@@ -12,5 +12,6 @@ Gem::Specification.new do |gem|
   gem.require_paths = ["lib"]
   gem.version       = Shibui::VERSION
 
+  gem.add_dependency "sass",    ">= 3.2.0.alpha"
   gem.add_dependency "compass", ">= 0.11.5"
 end
