@@ -1,72 +1,61 @@
-<!doctype html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>Sample Shibui Project</title>
+<!DOCTYPE html>
+<meta charset="utf8">
+<title>Shibui Template</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="viewport" content="width=device-width">
+<link rel="stylesheet" type="text/css" href="/stylesheets/screen.css">
 
-  <link rel="icon" type="image/x-icon" href="//nav.heroku.com/images/logos/favicon.ico">
+<div class="experimental-container">
+  <h1>Typography</h1>
 
-  <link rel="stylesheet" href="stylesheets/screen.css">
-</head>
+  <p>Shibui can pretty much style <a href="http://daringfireball.net/projects/markdown/">anything Markdown can render</a> and makes sure your page has a consistent line-height. You can learn about the markup by inspecting the elements on this page.</p>
 
-<body>
-  <div class="container">
-    <div class="hero">
-      <h1>A Hero Header</h1>
-      <h2>A Subtitle in Purple</h2>
-    </div>
+  <h2>Inline Elements</h2>
 
-    <h1>A Level 1 Header</h1>
-    <h2>A Level 2 Header</h2>
-    <h3>A Level 3 Header</h3>
-    <h4>A Level 4 Header</h4>
-    <h5>A Level 5 Header</h5>
-    <h6>A Level 6 Header</h6>
+  <p>You <a href="#">can link</a>, emphasize with the <strong>strong tag</strong> and the <em>em tag</em>, or wrap inline snippets of code with <code>the code tag</code>.</p>
 
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </p>
+  <p>Feel free to use <code>&lt;b&gt;</code> and <code>&lt;i&gt;</code> in HTML5, but their usage has changed a bit. <code>&lt;b&gt;</code> is meant to highlight words or phrases without conveying additional importance while <code>&lt;i&gt;</code> is mostly for voice, technical terms, etc.</p>
 
-    <ul>
-      <li>An unordered list item</li>
-      <li>Another unordered list item</li>
-      <li>The last item of an unordered list</li>
-    </ul>
+  <p>Even though Markdown doesn't support <abbr title="Abbreviations">abbr</abbr>, Shibui does. Abbreviations with a <code>title</code> attribute have a light dotted bottom border and a help cursor on hover.</p>
 
-    <ol>
-      <li>An ordered list item</li>
-      <li>Another ordered list item</li>
-      <li>The last item of an ordered list</li>
-    </ol>
+  <h2>Block-level Elements</h2>
 
-    <pre><code>A block of code</code></pre>
+  <p>Unlike multiple <code>&lt;br&gt;</code> tags, paragraphs are a great way to structure your copy (feel free to use a <i>single</i> <code>&lt;br&gt;</code> tag for line-breaks). You can also use other block-level tags to give meaning to your content:</p>
 
-    <p>
-      Something <strong>bold</strong>, and something <em>initalics</em>.
-    </p>
+  <h3>Lists</h3>
 
-    <hr>
+  <ul>
+    <li>Use an unordered list for unordered information</li>
+    <li>
+        Lists may be nested
 
-    <p>
-      <a href="#" class="button">A Default Button</a>
-    </p>
+        <ul>
+          <li>Child lists can be of a different type</li>
+        </ul>
+    </li>
+  </ul>
 
-    <p>
-      <a href="#" class="silver button">A Silver Button</a>
-    </p>
+  <ol>
+    <li>Use ordered lists for ordered information</li>
+    <li>Read <a href="http://daringfireball.net/projects/markdown/syntax#list">more about Markdown lists</a></li>
+    <li><a href="http://markdownr.com/">Give it a try</a></li>
+  </ol>
 
-    <hr>
+  <dl>
+    <dt>Definition List</dt>
+    <dd>A list which consists of two parts: a term and a description.</dd>
+  </dl>
 
-    <p>
-      <input type="text" placeholder="Text Field">
-    </p>
+  <h3>Code Blocks</h3>
 
-    <p>
-      <textarea placeholder="Text Area"></textarea>
-    </p>
-  </div>
-</body>
-</html>
+<pre><code>def my_code_block
+  var = "Display code snippets with code blocks"
+  puts var
+end</code></pre>
+
+  <p>For <code>inline code</code> see <a href="#">inline elements</a>.</p>
+
+  <hr>
+
+  <p>Horizontal rules help separate blocks of content.</p>
+</div>

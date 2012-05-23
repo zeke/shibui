@@ -1,0 +1,28 @@
+// This is a sample project using Shibui
+
+// You can either import the entire Shibui library
+// @import "shibui";
+
+// Or only import the components you require (and their dependencies)
+@import "shibui/config";
+
+@import "compass";
+@import "compass/reset";
+
+@import "shibui/fonts";
+@import "shibui/typography";
+
+// This is a sample stylesheet using Shibui
+// ----------------------------------------------------------------------------
+
+@import "shibui/init";
+
+body {
+  background: $shibui-content-background-color;
+}
+
+.experimental-container {
+  margin: 50px auto;
+  max-width: 600px;
+  padding: 0 10px;
+}

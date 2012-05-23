@@ -1,14 +1,12 @@
 description 'Shibui Compass Gem'
 
-stylesheet 'sass/screen.sass', :to => 'screen.sass', :media => "screen, projector"
-
-image 'input-focus-bg.png'
+stylesheet 'sass/screen.scss', :to => 'screen.scss', :media => "screen, projector"
 
 html 'index.html'
 
 help %Q{
 
-If you need help, email Front-end at front-end@heroku.com or visit heroku.github.com/shibui"
+If you need help, email max@heroku.com."
 
 }
 
